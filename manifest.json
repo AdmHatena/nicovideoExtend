@@ -1,0 +1,17 @@
+{
+  "name": "NicoVideo Extender",
+  "manifest_version": 3,
+  "version": "0.0.1",
+  "permissions": [
+    "activeTab"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "https://www.nicovideo.jp/my/*"
+      ],
+      "js": [ "src/content.js" ],
+      "run_at": "document_end"
+    }
+  ]
+}
